@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/UserRegLogin"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center|center_horizontal"
+            android:text="User Login"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scrollbarThumbHorizontal="@color/colorWhite"
+            android:scrollbarThumbVertical="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            app:errorEnabled="true"
+            app:passwordToggleTint="@color/colorWhite">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorWhite"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorWhite"
+                android:textColorLink="@color/colorAccent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbarThumbHorizontal="@color/colorWhite"
+            android:scrollbarThumbVertical="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorWhite">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textColorLink="@color/colorWhite" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/login"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textViewCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"
+            android:textColorLink="@color/colorWhite" />
+    </LinearLayout>
+</ScrollView>
